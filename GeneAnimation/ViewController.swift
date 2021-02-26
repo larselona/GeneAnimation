@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clicked(_ sender: AnyObject) {
-       // tap.isHidden = true
+       
 
         UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 4, options: [],
            animations: { [unowned self] in
@@ -49,9 +49,6 @@ class ViewController: UIViewController {
                 break
             }
         })
-        //{ [unowned self] (finished: Bool) in
-          //  self.tap.isHidden = false
-        //}
 
         currentAnimation += 1
 
