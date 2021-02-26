@@ -17,8 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSU-QY-oHE">
-                                <rect key="frame" x="179" y="811" width="57" height="30"/>
-                                <state key="normal" title="Animate"/>
+                                <rect key="frame" x="178.5" y="811" width="57" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
                                 <connections>
                                     <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sxl-fe-mgf"/>
                                 </connections>
@@ -40,6 +42,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
