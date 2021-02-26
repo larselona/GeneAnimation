@@ -24,24 +24,25 @@ class ViewController: UIViewController {
     @IBAction func clicked(_ sender: AnyObject) {
        
 
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 4, options: [],
+        UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 4, options: [],
            animations: { [unowned self] in
             switch self.currentAnimation {
             case 0:
-                self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
+                self.imageView.transform = CGAffineTransform(translationX: -128, y: 128)
+                
             case 1:
                 self.imageView.transform = CGAffineTransform.identity
             case 2:
-                self.imageView.transform = CGAffineTransform(translationX: -128, y: 128)
+                self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
             case 3:
                 self.imageView.transform = CGAffineTransform.identity
             case 4:
-                self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                self.imageView.transform = CGAffineTransform(scaleX: 3, y: 3)
             case 5:
                 self.imageView.transform = CGAffineTransform.identity
             case 6:
-                self.imageView.alpha = 0.1
-                self.imageView.backgroundColor = UIColor.red
+                self.imageView.alpha = 0.8
+                self.imageView.backgroundColor = UIColor.orange
             case 7:
                 self.imageView.alpha = 1
                 self.imageView.backgroundColor = UIColor.clear
